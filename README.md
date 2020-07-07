@@ -16,7 +16,7 @@ At its core, `tegami` aims to be an AFRP implementation designed around real-wor
 
 ## Prelude
 ### Standard Encoding
-Most AFRP implementations use the same two encodings. Yampa in particular uses a GADT, however if one were to simplify said GADT down to its bare bones it would ultimately be the same encoding:
+Most AFRP implementations use the same encoding. Yampa in particular uses a GADT, however if one were to simplify said GADT down to its bare bones it would ultimately be the same encoding:
 
 ```hs
 newtype X a b = X { step :: a -> (b, X a b) }
