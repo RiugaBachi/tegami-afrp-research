@@ -38,13 +38,13 @@ This is the importance of differentiating between the definition and encoding fo
 
 By convention, the standard encoding `X` above will be referred to as _automaton encoding_. Why, you ask? From `Control.Arrow.Transformer.Automaton`:
 
-```
+```hs
 newtype Automaton a b c = Automaton (a b (c, Automaton a b c))
 ```
 
 If you specialize this to `Automaton (->)`, you get:
 
-```
+```hs
 newtype Automaton' b c = Automaton' (b -> (c, Automaton' b c))
 ```
 
