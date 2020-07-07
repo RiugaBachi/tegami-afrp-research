@@ -58,7 +58,7 @@ newtype Y m a b = Y { step :: a -> m (b, Y m a b) }
 
 This is the encoding behind dunai's `MSF`, varying's `VarT`, etc.
 
-These two encodings, `X` and `Y`, generalize the vast majority of AFRP arrow primitives encountered in the wild.
+These two encodings, `X` and `Y`, generalize the vast majority of AFRP arrow primitives encountered in the wild. However, it does not mean these encodings are ideal. By experimenting with different encodings, not only can we lift restrictions on the expressivity of AFRP networks, but also optimize performance in a way that does not require rewriting networks in strange or unconventional manners, often with excessive boilerplate as a fundamental byproduct.
 
 ### Illegality of ArrowApply
 ## Subnetting
