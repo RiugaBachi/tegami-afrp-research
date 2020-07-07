@@ -48,6 +48,8 @@ If you specialize this to `Automaton (->)`, you get:
 newtype Automaton' b c = Automaton' (b -> (c, Automaton' b c))
 ```
 
+Which is of course, the same as the defnition of `X`.
+
 A common derivative of standard automaton encoding is _monadic automaton encoding_:
 
 ```hs
