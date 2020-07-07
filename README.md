@@ -1,6 +1,6 @@
 # Tegami AFRP Research
 
-This repository serves as a compilation of research into the topic of AFRP for use in my upcoming library `tegami`. The aim is to guide those looking to get into AFRP implementation in the future and lower the barrier of entry somewhat. 
+This repository serves as a compilation of research into the topic of AFRP for use in my upcoming library `tegami`. The aim is to guide those looking to get into AFRP implementation in the future, give them insight into implementation issues, and help them avoid common implementation pitfalls. 
 
 This compilation does not aim to be academically rigorous.
 
