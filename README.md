@@ -34,7 +34,7 @@ Ah, but can we not also define another possible SF from the same encoding?
 newtype GeneralizedSF t a b = GSF { step :: a -> t -> (b, GeneralizedSF t a b) }
 ```
 
-This is the importance of differentiating between the definition and encoding for arrow primitives in AFRP. There can be many valid definitions which all use the same encoding, however the encoding is important as a standalone concept in optimizing arrow performance and memory semantics.
+This is the importance of differentiating between the definition and encoding for arrow primitives in AFRP. There can be many valid definitions that can be derived from the same encoding, however the encoding is important as a standalone concept in optimizing arrow performance and memory semantics.
 
 By convention, the standard encoding `X` above will be referred to as _automaton encoding_. Why, you ask? From `Control.Arrow.Transformer.Automaton`:
 
